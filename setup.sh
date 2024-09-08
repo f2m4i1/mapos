@@ -21,6 +21,13 @@ php -r "unlink('composer-setup.php');"
 # Executar o Composer install
 composer install --no-dev
 
+# Instalar MYSQL
+# mac -> brew install mysql
+
+# Start MYSQL
+# mac -> brew services start mysql
+MySQL -u root -e "CREATE DATABASE mapos;"
+
 # Executar com Servidor Embutido do PHP
 php -S localhost:8000
 
